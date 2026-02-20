@@ -1,25 +1,222 @@
 <!DOCTYPE html>
-
-<html lang="es">
-    <body>
- <nav aria-label="Navegación Principal">
- </nav>
-
- <main id="contenido" class="container">
-    <selection class="card" id="texto">
-        <h2> 1 Texto y estructura</h2>
-        <p> este es un parrafo con <strong>Negrita</strong> <em>Letras</em></p>
-    </selection>
- </main>
-
-    
-</body>
-<head> <!--cabecera-->
-    <meta charset="UTF-8"> <!--caracteres especiales-->
+<!-- etiqueta que especifica wue estamos ecribiendo en html -->
+ <html lang="es"></html> <!-- idioma html -->
+<head> <!-- cabecera -->
+    <meta charset="UTF-8"> <!-- caracteres especiales  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera pagina web</title>
+    <title>Mi pimera pagina web</title>
 </head>
 <body>
+    <h1> Hola, buenos dias</h1>
+    <h1> Etiqueta h1 para titulos  </h1>
+    <h2> Etiquta h2 </h2>
+    <h3> Etiqueta h3 </h3>
+
+    <!-- etiqueta de texto diferente tamaño -->
+     <h4> Hola </h4>
+     <h5>Hola </h5>
+
+     <!-- etiqueta de listado -->
+      <nav aria-label="Navegacion principal">
+        <!-- listas no ordenadas -->
+      <ul class="nav" ></ul>
+      <li><a href="#texto">Texto</a></li>
+        <li> <a href="#listas">Listas</a></li>
+        <li> <a href="#multimedia">Multumedia</a></li>
+        <li> <a href="#tabls">Tablas</a></li>
+        <li> <a href="#formularios">Formularios</a></li>
+        <li> <a href="#Semántica">Semántica</a></li>
+
+  </ul>
+    </nav>
     
+    <main id="contenido" class="container">
+        <section class="card" id="texto">
+      <h2>1) Texto y estructura</h2>
+
+      <article>
+        <h3>Encabezados</h3>
+        <p>Esto es un párrafo con <strong>strong</strong>, <em>em</em>, <mark>mark</mark>, <u>u</u> y <code>code</code>.</p>
+
+        <p>
+          Un enlace: <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web Docs</a>.
+          Un <abbr title="HyperText Markup Language">HTML</abbr> bien usado es oro.
+        </p>
+
+        <blockquote cite="https://developer.mozilla.org/">
+          “La web se construye mejor cuando el HTML tiene significado.”
+        </blockquote> <!-- para citar -->
+
+        <p>
+          Texto pequeño: <small>esto es una nota al pie mental.</small> <!-- texto mas pequeñas letra -->
+        </p>
+
+        <p>
+          Superíndice y subíndice: H<sub>2</sub>O y 2<sup>10</sup>.
+        </p>
+
+        <hr />
+
+        <h3>Detalles expandibles</h3>  <!-- detalles, listas expandibles -->
+        <details>
+          <summary>Abre para ver un tip</summary>
+          <p>Usa etiquetas semánticas: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>… tu yo del futuro te lo agradece.</p>
+        </details>
+
+        <h3>Preformateado</h3>  <!-- hace salto de linea y espacios -->
+        <pre><code>function holaMundo() {
+  console.log("Hola, GitHub!");
+}</code></pre>
+      </article>
+    </section>
+   
+
+    <section class="car">
+        <h2>2) Listas</h2>
+        <div class="grid">
+
+            <div> <!-- contenedor -->
+                <h3>LISTAS NO ORDENADAS</h3>
+                <ul>
+                    <li>Pan</li>
+                    <li>Café</li>
+                    <li>Cena</li>
+                    
+                </ul>
+            </div>
+
+        
+
+        <div>
+            <h3>LISTAS ORDENADAS</h3>
+            <ol>
+                <li>Clonaar repo</li>
+                <li>Editar</li>
+                <li>Comentar</li>
+                <li>Push</li>
+            </ol>
+        </div>
+
+        <div>
+            <h3>LISTAS DE DEFINICIONES</h3>
+            <dl>
+                <dt>html</dt>
+                <dt>Estructuras</dt>
+                <dt>Estilo</dt>
+                <dt>JS</dt>
+            </dl>
+        </div>
+    
+      </div>
+    </section>
+
+<section class="card" id="multumedia">
+    <h2>Multimedia</h2>
+    <figure>
+        <img src="data:image/jpeg;base64,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" alt="Imagen de ejemplo">
+    </figure>
+    
+    <p>
+        <button type="button" class="btn"> Botón 
+            <a href="#Formularios" class="btn ghost">Ir a Formularios</a>
+        </button>
+    </p>
+
+</section>
+<section class="card" id="tablas">
+    <h2>4) TABLAS</h2>
+    <table>
+    <caption>Tablas de ejemplo</caption>  <!-- nombre tablas -->
+    <thead>  <!-- cabecera de la tabla -->
+        <tr>   <!-- para especificar fila del elcabezado -->
+            <th scope="col">comando</th> <!-- celdas del encabezado -->
+            <th scope="col">¿Qué hace?</th>
+        </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>git status</td> <!-- celdad de las filas -->
+        <td>Muestra cambios pendientes</td>  
+    </tr>
+
+    <tr>
+      <td>git add</td>
+      <td>agrega cambios de</td>
+    </tr>
+
+        <tr>
+            <td>git push</td>
+            <td>sube al repo</td>
+        </tr>
+
+
+</tbody>
+
+
+    </table>
+</section>
+<section class="card" id="formulariod">
+    <h2>5) formularios</h2>
+    <form action="#" method="post"></form>
+    <fieldset>
+        <fieldset>Datos Basicos</fieldset>
+        <label >
+            nombre
+            <input type="text" name="nombre" placeholder="tu nombre" required>
+        </label>
+         <label >
+            correo
+            <input type="email"name="nobre" placeholder="ingresa tu correo" required>
+        </label>
+          <label >
+            password
+            <input type="password"name="pass" minlength="6"  placeholder="tu contraseña" required>
+        </label>
+        <label >
+            fecha 
+            <input type="date" name="fecha">
+
+        </label>
+        <label >
+            color  
+            <input type="color" name="color">
+
+        </label>
+        <label >
+            rango
+            <input type="rango" name="rango" min="0" max="100">
+
+        </label>
+         <label >
+            Selection
+            <select name="opcion">
+                <option value="">Elige una</option>
+                <option >HTML</option>
+                <option >CSS</option>
+                <option >Git</option>
+            </select>
+        </label>
+        <label>
+            Comentarios
+            <textarea name="comentarios" rous="4" placeholder="Escribe algo"></textarea>
+        </label>
+        <div class="inline">
+            <label><input type="radio" name="nivel" value="basico">Básico</label>
+            <label><input type="radio" name="nivel" value="pro">Pro</label>
+        </div>
+          <div class="inline">
+            <label><input type="checkbox" name="ok" >Acepto Trerminos</label>
+        </div>
+          <div class="actions">
+            <button class="btn" type="submit">Enviar</button>
+            <button class="btn ghost" type="reset">Limpiar</button>
+        </div>
+
+    </fieldset>
+
+</section>
+
+ </main>
+
 </body>
 </html>
